@@ -4,11 +4,11 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
-import Register from "@/pages/Register";
-import Login from "@/pages/Login";
-import AnnotatorDashboard from "@/pages/AnnotatorDashboard";
-import AnnotationInterface from "@/pages/AnnotationInterface";
-import SpecialistDashboard from "@/pages/SpecialistDashboard";
+import Register from "@/pages/auth/Register";
+import Login from "@/pages/auth/Login";
+import AnnotatorDashboard from "@/pages/annotator/AnnotatorDashboard";
+import AnnotationInterface from "@/pages/annotator/AnnotationInterface";
+import SpecialistDashboard from "@/pages/data-specialist/SpecialistDashboard";
 
 function Router() {
   return (

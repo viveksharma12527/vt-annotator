@@ -1,4 +1,4 @@
-import { db } from "./db";
+import { db } from "./src/config/database";
 import { 
   users, type InsertUser, type User,
   projects, type InsertProject, type Project,
@@ -6,7 +6,7 @@ import {
   images, type InsertImage, type Image,
   annotations, type InsertAnnotation, type Annotation,
   projectAssignments, type InsertProjectAssignment, type ProjectAssignment
-} from "@shared/schema";
+} from "./src/models/schema";
 import { eq, and } from "drizzle-orm";
 
 export interface IStorage {

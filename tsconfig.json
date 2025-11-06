@@ -1,6 +1,6 @@
 {
   "include": [
-    "vt-frontend/src/**/*",
+    "frontend/src/**/*",
     "shared/**/*",
     "vt-backend/**/*"
   ],
@@ -20,7 +20,7 @@
     "baseUrl": ".",
     "types": ["node", "vite/client"],
     "paths": {
-      "@/*": ["./vt-frontend/src/*"],
+      "@/*": ["./frontend/src/*"],
       "@shared/*": ["./shared/*"]
     }
   }
