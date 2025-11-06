@@ -6,9 +6,7 @@
 |-------------|----------------------------------------------------------------------|
 | /backend    | Complete Node.js/Express API service. Handles all API, business logic, authentication, and database interaction. |
 | /frontend   | Complete React/Vite UI application. Handles all user interfaces (Dashboards, Annotation Tool). |
-| .git        | Git version control files.                                           |
 | .gitignore  | Specifies files to ignore (e.g., node_modules).                      |
-| package.json| Project-wide dependencies (if managed as a true monorepo).           |
 | README.md   | Main entry point documentation.                                      |
 
 ---
