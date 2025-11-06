@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: "./server/.env" });
 import { db } from "./db";
-import { users, projects, labels, images, annotations, projectAssignments } from "@shared/schema";
+import { users, projects, labels, images, annotations, projectAssignments } from "./src/schema";
 import { sql } from "drizzle-orm";
 
 async function main() {

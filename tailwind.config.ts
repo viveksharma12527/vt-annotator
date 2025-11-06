@@ -3,8 +3,8 @@ import type { Config } from "tailwindcss";
 export default {
   darkMode: ["class"],
   content: [
-    "./vt-frontend/index.html",
-    "./vt-frontend/src/**/*.{js,ts,jsx,tsx}",
+    "./frontend/index.html",
+    "./frontend/src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
