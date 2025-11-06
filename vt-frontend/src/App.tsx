@@ -13,7 +13,7 @@ import SpecialistDashboard from "@/pages/SpecialistDashboard";
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={() => <Redirect to="/login" />} />
+      <Route path="/" component={AnnotatorDashboard} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
       <Route path="/annotator/dashboard" component={AnnotatorDashboard} />

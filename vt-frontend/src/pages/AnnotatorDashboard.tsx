@@ -28,10 +28,10 @@ export default function AnnotatorDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
               <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
@@ -50,11 +50,12 @@ export default function AnnotatorDashboard() {
                 <AvatarFallback className="bg-primary text-primary-foreground text-xs">LC</AvatarFallback>
               </Avatar>
             </div>
-            <Button 
-              variant="ghost" 
-              size="sm"
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={handleLogout}
               data-testid="button-logout"
+              className="rounded-full w-8 h-8"
             >
               <LogOut className="w-4 h-4" />
             </Button>
@@ -63,7 +64,7 @@ export default function AnnotatorDashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
+      <main className="flex-grow container py-8">
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Welcome Section */}
           <div>
@@ -89,7 +90,7 @@ export default function AnnotatorDashboard() {
                     <div className="text-sm text-muted-foreground">
                       {project.imagesCompleted} of {project.imagesTotal} images annotated
                     </div>
-                    <Button 
+                    <Button
                       className="w-full gap-2"
                       onClick={() => handleStartAnnotation(project.id)}
                       data-testid={`button-start-annotation-${project.id}`}
@@ -105,8 +106,8 @@ export default function AnnotatorDashboard() {
         </div>
       </main>
 
-      {/* Sign out at bottom */}
-      <div className="container mx-auto px-4 pb-8">
+      {/* Footer */}
+      <footer className="container pb-8">
         <div className="max-w-7xl mx-auto">
           <button
             onClick={handleLogout}
@@ -116,7 +117,7 @@ export default function AnnotatorDashboard() {
             Sign out
           </button>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }

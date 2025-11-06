@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 /* LIGHT MODE */
 :root {
@@ -328,7 +328,7 @@
     position: absolute;
     inset: 0px;
     border-radius: inherit;
-    z-index: 999;
+    z-index: -1;
   }
 
   .hover-elevate:hover:not(.no-default-hover-elevate)::after,
